@@ -33,7 +33,7 @@ const App = () => {
             </Route>
 
             <Route path='admin' element={ <AdminLayout/ >}>
-              <Route index element={<Profile/>} />
+           
             </Route>
 
           </Route>
