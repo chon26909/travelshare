@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+// import 'semantic-ui-css/semantic.min.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 //component 
@@ -31,13 +32,11 @@ const App = () => {
               <Route path="setting" element={<Setting />} />
             </Route>
 
-            <Route path='admin' element={ <AdminLayout/ >}>
+            <Route path='admin' element={ <AdminLayout/>}>
               <Route index element={ <Profile/>} />
             </Route>
 
           </Route>
-
-          
 
         </Routes>
       </BrowserRouter>
