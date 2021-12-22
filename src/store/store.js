@@ -8,6 +8,5 @@ const reducers = {
 }
 
 export const store = configureStore({
-    reducer: reducers,
-    devTools:false
+    reducer: reducers
 });
