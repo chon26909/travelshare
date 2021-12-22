@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import { Form, Button } from "react-bootstrap";
 import "../styles/login.css"
 
 const LoginPage = () => {
@@ -15,7 +14,7 @@ const LoginPage = () => {
 
     return (
         <div className='container vh-100'>
-            <h1 className='pt-5 text-center'>ลงชื่อเข้าใช้</h1>
+            {/* <h1 className='pt-5 text-center'>ลงชื่อเข้าใช้</h1>
             <Form className='form-login mx-auto pt-3' onSubmit={(e) => submitLogin(e)}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>อีเมล</Form.Label>
@@ -31,7 +30,7 @@ const LoginPage = () => {
                         ลงชื่อเข้าใช้
                     </Button>
                 </div>
-            </Form>
+            </Form> */}
         </div>
     )
 }
