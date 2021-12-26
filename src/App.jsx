@@ -19,7 +19,7 @@ const App = () => {
     <React.Suspense fallback={<LoadingPage/>}>
       <BrowserRouter>
         <Routes>
-
+        
           <Route path="/">
             <Route index element={<HomePage />} />
             <Route path="login" element={<LoginPage/>} />
@@ -37,7 +37,6 @@ const App = () => {
             </Route>
 
           </Route>
-
         </Routes>
       </BrowserRouter>
     </React.Suspense>
