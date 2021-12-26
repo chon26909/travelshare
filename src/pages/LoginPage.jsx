@@ -4,15 +4,18 @@ import { Container, Form, Button, Header } from 'semantic-ui-react';
 
 const LoginPage = () => {
 
-    const email = useRef(null);
-    const password = useRef(null);
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
     const [loadingLogin, setloadingLogin] = useState(false)
 
     const submitLogin = (e) => {
+
+        if (loadingLogin) return 
+
         e.preventDefault();
-        console.log("email", email.current.value);
-        console.log("password", password.current.value);
+        console.log("email", email);
+        console.log("password", password);
         setloadingLogin(true)
     }
 
@@ -32,10 +35,10 @@ const LoginPage = () => {
                     <Form.Input
                         icon='mail'
                         iconPosition='left'
-                        label='Username'
+                        label='Email'
                         placeholder='xxxxx@gmail.com'
                         required={true}
-                        input={email}
+                        onChange={(e) => setEmail(e.target.value)}
                     />
                     <Form.Input
                         icon='lock'
@@ -44,7 +47,7 @@ const LoginPage = () => {
                         type='password'
                         placeholder='xxxxxxxx'
                         required={true}
-                        input={password}
+                        onChange={(e) => setPassword(e.target.value)}
                     />
                     <Button loading={loadingLogin} type='submit' fluid size='big' color='violet'>Login</Button>
                 </Form>
