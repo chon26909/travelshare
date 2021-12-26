@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 //component 
 import ProtectedRoute from "./auth/ProtectedRoute";
-import LoadingPage from './components/LoadingPage';
+import LoadingPage from './components/Loading/LoadingPage';
 import LoginPage from './pages/LoginPage';
 import AdminLayout from './layouts/AdminLayout';
 
