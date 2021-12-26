@@ -1,9 +1,12 @@
 import React from 'react'
+import { Card } from 'semantic-ui-react'
 
 const HomePage = () => {
     return (
-        <div >
-            Home
+        <div>
+            <Card
+                image='/images/avatar/large/elliot.jpg'
+            />
         </div>
     )
 }
