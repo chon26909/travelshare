@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'semantic-ui-react'
-import spinner from '../../assets/images/loading/Ball.gif'
+import spinner from '../../assets/images/gif/Ball.gif'
 import './loading.css'
 
 const LoadingPage = () => {
@@ -8,7 +8,7 @@ const LoadingPage = () => {
         <div>
             <Container>
                 <div className='spinner-center'>
-                    <img src={spinner} alt="loading page"  />
+                    <img src={spinner} alt="loading page" />
                 </div>
             </Container>
         </div>
