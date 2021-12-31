@@ -4,3 +4,17 @@
     object-fit: cover;
     object-position: center;
 }
+.search-landing-page {
+    position: relative;
+}
+.overlay-search {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.overlay-search input { 
+    width: 100% !important;
+}
